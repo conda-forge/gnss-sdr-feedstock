@@ -2,6 +2,7 @@ setlocal EnableDelayedExpansion
 @echo on
 
 :: Make a build folder and change to it
+cmake -E rm -rf forgebuild
 mkdir forgebuild
 if errorlevel 1 exit 1
 cd forgebuild

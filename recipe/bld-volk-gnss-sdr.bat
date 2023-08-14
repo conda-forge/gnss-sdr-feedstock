@@ -4,6 +4,7 @@ setlocal EnableDelayedExpansion
 cd src\algorithms\libs\volk_gnsssdr_module\volk_gnsssdr
 
 :: Make a build folder and change to it
+cmake -E rm -rf forgebuild
 mkdir forgebuild
 if errorlevel 1 exit 1
 cd forgebuild

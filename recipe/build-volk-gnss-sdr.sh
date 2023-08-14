@@ -7,6 +7,7 @@ if [[ $target_platform == osx* ]] ; then
 fi
 
 cd src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr
+rm -rf forgebuild
 mkdir forgebuild
 cd forgebuild
 

@@ -13,6 +13,7 @@ if [[ "${target_platform}" == "osx-64" ]]; then
   export CXXFLAGS="-DBOOST_ASIO_DISABLE_STD_ALIGNED_ALLOC ${CXXFLAGS}"
 fi
 
+rm -rf forgebuild
 mkdir forgebuild
 cd forgebuild
 

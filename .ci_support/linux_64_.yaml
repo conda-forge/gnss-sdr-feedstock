@@ -34,6 +34,7 @@ libpcap:
 - '1.10'
 libprotobuf:
 - '3.21'
+- 4.23.3
 openssl:
 - '3'
 pin_run_as_build:
