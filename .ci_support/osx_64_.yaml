@@ -31,7 +31,6 @@ libmatio:
 libpcap:
 - '1.10'
 libprotobuf:
-- '3.21'
 - 4.23.3
 macos_machine:
 - x86_64-apple-darwin13.4.0
@@ -40,6 +39,8 @@ openssl:
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
+pugixml:
+- '1.13'
 target_platform:
 - osx-64
 uhd:
