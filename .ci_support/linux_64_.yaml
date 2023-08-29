@@ -33,13 +33,14 @@ libmatio:
 libpcap:
 - '1.10'
 libprotobuf:
-- '3.21'
 - 4.23.3
 openssl:
 - '3'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
+pugixml:
+- '1.13'
 target_platform:
 - linux-64
 uhd:
