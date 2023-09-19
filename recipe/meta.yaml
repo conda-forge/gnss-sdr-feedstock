@@ -67,6 +67,7 @@ outputs:
         - {{ compiler("cxx") }}
         - cmake
         - git
+        - libprotobuf  # [build_platform != target_platform]
         - ninja
         - pkg-config
       host:
