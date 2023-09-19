@@ -11,7 +11,7 @@ source:
     - 0001-Manually-specify-compiled-in-GNSSSDR_INSTALL_DIR.patch
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win]
 
 outputs:
@@ -67,6 +67,7 @@ outputs:
         - {{ compiler("cxx") }}
         - cmake
         - git
+        - libprotobuf  # [build_platform != target_platform]
         - ninja
         - pkg-config
       host:
