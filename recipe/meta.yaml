@@ -11,7 +11,7 @@ source:
     - 0001-Manually-specify-compiled-in-GNSSSDR_INSTALL_DIR.patch
 
 build:
-  number: 5
+  number: 6
   skip: true  # [win]
 
 outputs:
@@ -72,7 +72,7 @@ outputs:
         - pkg-config
       host:
         - armadillo
-        - boost-cpp
+        - libboost-devel
         - gflags
         - glog
         - gnuradio-core
@@ -94,7 +94,6 @@ outputs:
         - volk
         - {{ pin_subpackage('volk-gnss-sdr', exact=True) }}
       run:
-        - boost-cpp
         - {{ pin_compatible('gnuradio-iio', max_pin='x.x.x') }}
         - {{ pin_compatible('gnuradio-uhd', max_pin='x.x.x') }}
         - {{ pin_compatible('gnuradio-zeromq', max_pin='x.x.x') }}
