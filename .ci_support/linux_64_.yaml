@@ -33,7 +33,7 @@ libmatio:
 libpcap:
 - '1.10'
 libprotobuf:
-- 4.23.4
+- 4.24.3
 openssl:
 - '3'
 pugixml:
