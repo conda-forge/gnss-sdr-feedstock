@@ -17,7 +17,7 @@ gflags:
 glog:
 - '0.6'
 gnuradio_core:
-- 3.10.7
+- 3.10.8
 libblas:
 - 3.9 *netlib
 libboost_devel:
