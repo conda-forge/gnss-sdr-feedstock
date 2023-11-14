@@ -29,7 +29,7 @@ libiio:
 liblapack:
 - 3.9 *netlib
 libmatio:
-- 1.5.24
+- 1.5.26
 libpcap:
 - '1.10'
 libprotobuf:

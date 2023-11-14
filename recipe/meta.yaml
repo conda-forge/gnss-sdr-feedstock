@@ -11,7 +11,7 @@ source:
     - 0001-Manually-specify-compiled-in-GNSSSDR_INSTALL_DIR.patch
 
 build:
-  number: 11
+  number: 12
   skip: true  # [win]
 
 outputs:
