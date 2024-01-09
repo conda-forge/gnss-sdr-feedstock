@@ -8,9 +8,10 @@ source:
   url: https://github.com/gnss-sdr/gnss-sdr/archive/refs/tags/v{{ version }}.tar.gz
   sha256: d5533370de188d50c214a5bb7832a433ceb09369c3e3296a4fa34fa1aefb685e
   patches:
-    - 0001-Manually-specify-compiled-in-GNSSSDR_INSTALL_DIR.patch
+    - 0001-cmake-Manually-specify-compiled-in-GNSSSDR_INSTALL_D.patch
     - 0002-cmake-Prefer-using-CMake-config-files-for-Gnuradio-a.patch
     - 0003-observables-gnuradio_blocks-Link-obs_gr_blocks-with-.patch
+    - 0004-cmake-Make-global-C-C-std-a-cache-variable-so-it-can.patch
 
 build:
   number: 15

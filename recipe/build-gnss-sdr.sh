@@ -19,6 +19,7 @@ cd forgebuild
 
 cmake_config_args=(
     -DCMAKE_BUILD_TYPE=Release
+    -DCMAKE_CXX_STANDARD=17
     -DCMAKE_INSTALL_LIBDIR=lib
     -DCMAKE_INSTALL_PREFIX=$PREFIX
     -DENABLE_AD9361=ON

@@ -4,6 +4,7 @@ Date: Thu, 4 Jan 2024 15:43:29 -0500
 Subject: [PATCH] cmake: Prefer using CMake config files for Gnuradio and
  VolkGnsssdr
 
+Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
 ---
  cmake/Modules/FindGNURADIO.cmake    | 12 ++++++++++++
  cmake/Modules/FindVOLKGNSSSDR.cmake |  7 +++++++

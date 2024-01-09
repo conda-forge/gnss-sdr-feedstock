@@ -4,6 +4,7 @@ Date: Thu, 4 Jan 2024 17:35:42 -0500
 Subject: [PATCH] observables: gnuradio_blocks: Link obs_gr_blocks with
  Gnuradio::runtime
 
+Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
 ---
  src/algorithms/observables/gnuradio_blocks/CMakeLists.txt | 1 +
  1 file changed, 1 insertion(+)
