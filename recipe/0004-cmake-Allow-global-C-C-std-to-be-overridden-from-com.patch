@@ -1,0 +1,42 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Ryan Volz <ryan.volz@gmail.com>
+Date: Tue, 9 Jan 2024 12:18:24 -0500
+Subject: [PATCH] cmake: Allow global C/C++ std to be overridden from command
+ line
+
+Previously, if a user-defined cache variable setting the C/C++ standard
+was passed from the command line, it would be ignored in favor of the
+default. Now the standard can be set from the command line when running
+cmake by passing e.g. "-DCMAKE_CXX_STANDARD=17".
+
+Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
+---
+ CMakeLists.txt | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 338df43c7..c902dd31e 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -451,9 +451,15 @@ endif()
+ # Set minimal C and C++ standards
+ ################################################################################
+ if(NOT (CMAKE_VERSION VERSION_LESS "3.1"))
+-    set(CMAKE_C_STANDARD 11)
+-    set(CMAKE_CXX_STANDARD 14)
+-    set(CMAKE_CXX_EXTENSIONS OFF)
++    if(NOT DEFINED CMAKE_C_STANDARD)
++        set(CMAKE_C_STANDARD 11)
++    endif()
++    if(NOT DEFINED CMAKE_CXX_STANDARD)
++        set(CMAKE_CXX_STANDARD 14)
++    endif()
++    if(NOT DEFINED CMAKE_CXX_EXTENSIONS)
++        set(CMAKE_CXX_EXTENSIONS OFF)
++    endif()
+ else()
+     add_compile_options("$<$<STREQUAL:$<TARGET_PROPERTY:LINKER_LANGUAGE>,C>:-std=gnu11>")
+     set(CMAKE_C_STANDARD 11)   # set variable just for reporting
+-- 
+2.42.0
+
