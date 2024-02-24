@@ -14,7 +14,7 @@ source:
     - 0004-cmake-Allow-global-C-C-std-to-be-overridden-from-com.patch
 
 build:
-  number: 16
+  number: 17
   skip: true  # [win]
 
 outputs:
