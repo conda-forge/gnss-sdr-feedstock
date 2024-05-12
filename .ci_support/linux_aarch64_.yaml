@@ -25,7 +25,7 @@ docker_image:
 gflags:
 - '2.2'
 glog:
-- '0.6'
+- '0.7'
 gnuradio_core:
 - 3.10.10
 libblas:
