@@ -15,10 +15,10 @@ Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
  1 file changed, 9 insertions(+), 3 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 338df43c7..c902dd31e 100644
+index 864d5a002..b72944b71 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -451,9 +451,15 @@ endif()
+@@ -460,9 +460,15 @@ endif()
  # Set minimal C and C++ standards
  ################################################################################
  if(NOT (CMAKE_VERSION VERSION_LESS "3.1"))
@@ -38,5 +38,5 @@ index 338df43c7..c902dd31e 100644
      add_compile_options("$<$<STREQUAL:$<TARGET_PROPERTY:LINKER_LANGUAGE>,C>:-std=gnu11>")
      set(CMAKE_C_STANDARD 11)   # set variable just for reporting
 -- 
-2.42.0
+2.45.1
 

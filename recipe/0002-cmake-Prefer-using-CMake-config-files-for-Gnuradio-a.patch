@@ -11,7 +11,7 @@ Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
  2 files changed, 19 insertions(+)
 
 diff --git a/cmake/Modules/FindGNURADIO.cmake b/cmake/Modules/FindGNURADIO.cmake
-index 9d6926e36..39a79b37c 100644
+index 5ce37cba6..d78e6892d 100644
 --- a/cmake/Modules/FindGNURADIO.cmake
 +++ b/cmake/Modules/FindGNURADIO.cmake
 @@ -23,6 +23,18 @@ if(NOT GR_REQUIRED_COMPONENTS)
@@ -52,5 +52,5 @@ index 64ab621d3..8a840ca9a 100644
      set(VOLKGNSSSDR_ROOT_USER_PROVIDED /usr/local)
  else()
 -- 
-2.42.0
+2.45.1
 

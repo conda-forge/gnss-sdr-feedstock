@@ -1,4 +1,4 @@
-{% set version = "0.0.18" %}
+{% set version = "0.0.19" %}
 
 package:
   name: gnss-sdr-split
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/gnss-sdr/gnss-sdr/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d5533370de188d50c214a5bb7832a433ceb09369c3e3296a4fa34fa1aefb685e
+  sha256: caa7fa1148c5af5626dc3967b1711f4b3bc7e796257a9c443bff321e22e34461
   patches:
     - 0001-cmake-Manually-specify-compiled-in-GNSSSDR_INSTALL_D.patch
     - 0002-cmake-Prefer-using-CMake-config-files-for-Gnuradio-a.patch
@@ -14,7 +14,7 @@ source:
     - 0004-cmake-Allow-global-C-C-std-to-be-overridden-from-com.patch
 
 build:
-  number: 22
+  number: 0
   skip: true  # [win]
 
 outputs:
