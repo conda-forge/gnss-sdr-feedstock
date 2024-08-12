@@ -14,7 +14,7 @@ source:
     - 0004-cmake-Allow-global-C-C-std-to-be-overridden-from-com.patch
 
 build:
-  number: 19
+  number: 23
   skip: true  # [win]
 
 outputs:
@@ -27,6 +27,7 @@ outputs:
     requirements:
       build:
         - {{ compiler("c") }}
+        - {{ stdlib("c") }}
         - {{ compiler("cxx") }}
         - cmake
         - gstreamer-orc  # [not win]
@@ -67,6 +68,7 @@ outputs:
     requirements:
       build:
         - {{ compiler("c") }}
+        - {{ stdlib("c") }}
         - {{ compiler("cxx") }}
         - cmake
         - git
