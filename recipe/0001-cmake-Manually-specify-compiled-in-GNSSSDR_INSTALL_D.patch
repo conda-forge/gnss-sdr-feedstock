@@ -12,10 +12,10 @@ Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
  4 files changed, 7 insertions(+), 4 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index b730b8997..338df43c7 100644
+index 8257ffdc3..864d5a002 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -205,6 +205,9 @@ if(NOT CMAKE_PREFIX_PATH)
+@@ -207,6 +207,9 @@ if(NOT CMAKE_PREFIX_PATH)
      endif()
  endif()
  
@@ -48,10 +48,10 @@ index 1e31cf4c3..7fa1c4b99 100644
  
  if(ENABLE_CLANG_TIDY)
 diff --git a/src/algorithms/signal_source/adapters/CMakeLists.txt b/src/algorithms/signal_source/adapters/CMakeLists.txt
-index 717b8ac00..f83247fe6 100644
+index afbf36296..2c38f323c 100644
 --- a/src/algorithms/signal_source/adapters/CMakeLists.txt
 +++ b/src/algorithms/signal_source/adapters/CMakeLists.txt
-@@ -288,7 +288,7 @@ if(ENABLE_CLANG_TIDY)
+@@ -295,7 +295,7 @@ if(ENABLE_CLANG_TIDY)
  endif()
  
  target_compile_definitions(signal_source_adapters
@@ -74,5 +74,5 @@ index 14e55ca99..562762024 100644
  
  if(USE_GENERIC_LAMBDAS)
 -- 
-2.42.0
+2.34.1
 
