@@ -30,7 +30,8 @@ outputs:
         - {{ compiler("c") }}
         - {{ stdlib("c") }}
         - {{ compiler("cxx") }}
-        - cmake
+        # avoid problems with missing clang-scan-deps on macOS
+        - cmake <3.28
         - gstreamer-orc  # [not win]
         - mako
         - ninja
@@ -71,7 +72,8 @@ outputs:
         - {{ compiler("c") }}
         - {{ stdlib("c") }}
         - {{ compiler("cxx") }}
-        - cmake
+        # avoid problems with FindPythonInterp deprecation
+        - cmake <3.27
         - git
         - libprotobuf  # [build_platform != target_platform]
         - ninja
