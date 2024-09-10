@@ -38,5 +38,5 @@ index 864d5a002..b72944b71 100644
      add_compile_options("$<$<STREQUAL:$<TARGET_PROPERTY:LINKER_LANGUAGE>,C>:-std=gnu11>")
      set(CMAKE_C_STANDARD 11)   # set variable just for reporting
 -- 
-2.45.1
+2.34.1
 

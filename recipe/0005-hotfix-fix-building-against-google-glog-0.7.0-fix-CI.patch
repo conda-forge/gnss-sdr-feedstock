@@ -173,5 +173,5 @@ index ecf90f365..5802aa9ca 100644
              config->set_property("PVT.output_rate_ms", std::to_string(output_rate_ms));
              config->set_property("PVT.display_rate_ms", std::to_string(display_rate_ms));
 -- 
-2.45.1
+2.34.1
 

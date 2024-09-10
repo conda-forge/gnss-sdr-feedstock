@@ -31,6 +31,7 @@ outputs:
         - {{ stdlib("c") }}
         - {{ compiler("cxx") }}
         # avoid problems with missing clang-scan-deps on macOS
+        # (alternatively add clang-tools dep, or set CMAKE_CXX_SCAN_FOR_MODULES=OFF)
         - cmake <3.28
         - gstreamer-orc  # [not win]
         - mako
