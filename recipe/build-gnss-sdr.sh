@@ -50,6 +50,9 @@ cmake_config_args=(
     -DGFLAGS_ROOT=$PREFIX
     -DGLOG_ROOT=$PREFIX
     -DGNSSSDR_INSTALL_DIR_DEF=\$CONDA_PREFIX
+    # workaround for their FindGNURADIO.cmake not detecting spdlog support
+    # and therefore not trying to use std::filesystem instead of Boost
+    -DGNURADIO_USES_SPDLOG=TRUE
 )
 
 if [[ $target_platform == osx* ]] ; then
