@@ -5,7 +5,7 @@ MACOSX_SDK_VERSION:
 c_compiler:
 - clang
 c_compiler_version:
-- '17'
+- '18'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -17,13 +17,15 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '17'
+- '18'
 gflags:
 - '2.2'
 glog:
 - '0.7'
 gnuradio_core:
 - 3.10.11
+gstreamer:
+- '1.24'
 libblas:
 - 3.9 *netlib
 libboost_devel:
@@ -33,11 +35,11 @@ libiio:
 liblapack:
 - 3.9 *netlib
 libmatio:
-- 1.5.27
+- 1.5.28
 libpcap:
 - '1.10'
 libprotobuf:
-- 5.28.2
+- 5.28.3
 macos_machine:
 - arm64-apple-darwin20.0.0
 openssl:
