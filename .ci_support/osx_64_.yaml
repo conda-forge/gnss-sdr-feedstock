@@ -27,13 +27,13 @@ gnuradio_core:
 gstreamer:
 - '1.24'
 libblas:
-- 3.9 *netlib
+- 3.9.* *netlib
 libboost_devel:
 - '1.86'
 libiio:
 - '0'
 liblapack:
-- 3.9 *netlib
+- 3.9.* *netlib
 libmatio:
 - 1.5.28
 libpcap:
@@ -45,7 +45,7 @@ macos_machine:
 openssl:
 - '3'
 pugixml:
-- '1.14'
+- '1.15'
 target_platform:
 - osx-64
 uhd:
