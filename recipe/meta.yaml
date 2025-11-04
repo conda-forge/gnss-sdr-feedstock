@@ -16,7 +16,7 @@ source:
     - 0006-Fix-iio.h-path-on-macOS-for-conda-forge.patch
 
 build:
-  number: 9
+  number: 10
   skip: true  # [win]
 
 outputs:
