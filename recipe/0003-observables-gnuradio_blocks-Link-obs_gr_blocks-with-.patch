@@ -10,7 +10,7 @@ Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
  1 file changed, 1 insertion(+)
 
 diff --git a/src/algorithms/observables/gnuradio_blocks/CMakeLists.txt b/src/algorithms/observables/gnuradio_blocks/CMakeLists.txt
-index 225518612..eef5c2645 100644
+index a8964f90c..0c7cfa1c5 100644
 --- a/src/algorithms/observables/gnuradio_blocks/CMakeLists.txt
 +++ b/src/algorithms/observables/gnuradio_blocks/CMakeLists.txt
 @@ -27,6 +27,7 @@ target_link_libraries(obs_gr_blocks
@@ -22,5 +22,5 @@ index 225518612..eef5c2645 100644
      PRIVATE
          algorithms_libs
 -- 
-2.34.1
+2.51.0
 

@@ -8,14 +8,14 @@ Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
  CMakeLists.txt                                       | 3 +++
  src/algorithms/libs/CMakeLists.txt                   | 4 ++--
  src/algorithms/signal_source/adapters/CMakeLists.txt | 2 +-
- src/utils/front-end-cal/CMakeLists.txt               | 2 +-
+ utils/front-end-cal/CMakeLists.txt                   | 2 +-
  4 files changed, 7 insertions(+), 4 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 8257ffdc3..864d5a002 100644
+index 839744f3a..8c1eb5f6e 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -207,6 +207,9 @@ if(NOT CMAKE_PREFIX_PATH)
+@@ -226,6 +226,9 @@ if(NOT CMAKE_PREFIX_PATH)
      endif()
  endif()
  
@@ -26,10 +26,10 @@ index 8257ffdc3..864d5a002 100644
  if(${CMAKE_SYSTEM_NAME} MATCHES "Linux|kFreeBSD|GNU")
      include(DetectLinuxDistro)
 diff --git a/src/algorithms/libs/CMakeLists.txt b/src/algorithms/libs/CMakeLists.txt
-index 1e31cf4c3..7fa1c4b99 100644
+index 3f0b050a6..3e87e28bf 100644
 --- a/src/algorithms/libs/CMakeLists.txt
 +++ b/src/algorithms/libs/CMakeLists.txt
-@@ -160,7 +160,7 @@ target_include_directories(algorithms_libs
+@@ -165,7 +165,7 @@ target_include_directories(algorithms_libs
  )
  
  target_compile_definitions(algorithms_libs
@@ -38,7 +38,7 @@ index 1e31cf4c3..7fa1c4b99 100644
  )
  
  if(DO_NOT_USE_LAMBDAS)
-@@ -218,7 +218,7 @@ if(GFLAGS_GREATER_20 OR ${LOCAL_GFLAGS})
+@@ -224,7 +224,7 @@ else()
  endif()
  
  target_compile_definitions(gnss_sdr_flags
@@ -48,10 +48,10 @@ index 1e31cf4c3..7fa1c4b99 100644
  
  if(ENABLE_CLANG_TIDY)
 diff --git a/src/algorithms/signal_source/adapters/CMakeLists.txt b/src/algorithms/signal_source/adapters/CMakeLists.txt
-index afbf36296..2c38f323c 100644
+index 48e18e5f3..1cf7887a9 100644
 --- a/src/algorithms/signal_source/adapters/CMakeLists.txt
 +++ b/src/algorithms/signal_source/adapters/CMakeLists.txt
-@@ -295,7 +295,7 @@ if(ENABLE_CLANG_TIDY)
+@@ -332,7 +332,7 @@ if(ENABLE_CLANG_TIDY)
  endif()
  
  target_compile_definitions(signal_source_adapters
@@ -60,11 +60,11 @@ index afbf36296..2c38f323c 100644
  )
  
  set_property(TARGET signal_source_adapters
-diff --git a/src/utils/front-end-cal/CMakeLists.txt b/src/utils/front-end-cal/CMakeLists.txt
-index 14e55ca99..562762024 100644
---- a/src/utils/front-end-cal/CMakeLists.txt
-+++ b/src/utils/front-end-cal/CMakeLists.txt
-@@ -70,7 +70,7 @@ endif()
+diff --git a/utils/front-end-cal/CMakeLists.txt b/utils/front-end-cal/CMakeLists.txt
+index 1dd300b1f..3d6bfaa26 100644
+--- a/utils/front-end-cal/CMakeLists.txt
++++ b/utils/front-end-cal/CMakeLists.txt
+@@ -81,7 +81,7 @@ endif()
  
  target_compile_definitions(front-end-cal
      PRIVATE -DGNSS_SDR_VERSION="${VERSION}"
@@ -74,5 +74,5 @@ index 14e55ca99..562762024 100644
  
  if(USE_GENERIC_LAMBDAS)
 -- 
-2.34.1
+2.51.0
 

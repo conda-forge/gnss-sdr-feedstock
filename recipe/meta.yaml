@@ -12,8 +12,6 @@ source:
     - 0002-cmake-Prefer-using-CMake-config-files-for-Gnuradio-a.patch
     - 0003-observables-gnuradio_blocks-Link-obs_gr_blocks-with-.patch
     - 0004-cmake-Allow-global-C-C-std-to-be-overridden-from-com.patch
-    - 0005-hotfix-fix-building-against-google-glog-0.7.0-fix-CI.patch
-    - 0006-Fix-iio.h-path-on-macOS-for-conda-forge.patch
 
 build:
   number: 0
