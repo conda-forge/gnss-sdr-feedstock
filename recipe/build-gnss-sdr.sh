@@ -23,7 +23,7 @@ cmake_config_args=(
     -DCMAKE_INSTALL_LIBDIR=lib
     -DCMAKE_INSTALL_PREFIX=$PREFIX
     -DCMAKE_POLICY_DEFAULT_CMP0148=OLD
-    -DENABLE_AD9361=ON
+    -DENABLE_AD9361=OFF
     -DENABLE_ARRAY=OFF
     -DENABLE_BENCHMARKS=ON
     -DENABLE_CUDA=OFF
@@ -47,8 +47,6 @@ cmake_config_args=(
     -DENABLE_UNIT_TESTING_EXTRA=OFF
     -DENABLE_UNIT_TESTING_MINIMAL=ON
     -DENABLE_ZMQ=ON
-    -DGFLAGS_ROOT=$PREFIX
-    -DGLOG_ROOT=$PREFIX
     -DGNSSSDR_INSTALL_DIR_DEF=\$CONDA_PREFIX
     # workaround for their FindGNURADIO.cmake not detecting spdlog support
     # and therefore not trying to use std::filesystem instead of Boost

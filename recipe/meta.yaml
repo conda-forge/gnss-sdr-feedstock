@@ -1,4 +1,4 @@
-{% set version = "0.0.19" %}
+{% set version = "0.0.20" %}
 
 package:
   name: gnss-sdr-split
@@ -6,17 +6,15 @@ package:
 
 source:
   url: https://github.com/gnss-sdr/gnss-sdr/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: caa7fa1148c5af5626dc3967b1711f4b3bc7e796257a9c443bff321e22e34461
+  sha256: 12bc2b2ad498be983ce12232700f10e781f3f7c2ea3fb3747ad1ac37deccab3e
   patches:
     - 0001-cmake-Manually-specify-compiled-in-GNSSSDR_INSTALL_D.patch
     - 0002-cmake-Prefer-using-CMake-config-files-for-Gnuradio-a.patch
     - 0003-observables-gnuradio_blocks-Link-obs_gr_blocks-with-.patch
     - 0004-cmake-Allow-global-C-C-std-to-be-overridden-from-com.patch
-    - 0005-hotfix-fix-building-against-google-glog-0.7.0-fix-CI.patch
-    - 0006-Fix-iio.h-path-on-macOS-for-conda-forge.patch
 
 build:
-  number: 10
+  number: 0
   skip: true  # [win]
 
 outputs:
@@ -83,13 +81,12 @@ outputs:
       host:
         - armadillo
         - libboost-devel
-        - gflags
-        - glog
         - gnuradio-core
         - gnuradio-iio
         - gnuradio-osmosdr
         - gnuradio-uhd
         - gnuradio-zeromq
+        - libabseil
         - libad9361-iio
         - libblas
         - libiio
@@ -126,10 +123,7 @@ about:
   license_file: COPYING
   summary: 'An open-source software-defined GNSS receiver'
   description: >
-    This program is a software-defined receiver which is able to process (that
-    is, to perform detection, synchronization, demodulation and decoding of the
-    navigation message, computation of observables, and, finally, computation of
-    position fixes) the following Global Navigation Satellite System's signals:
+    This program is a software-defined receiver which is able to process (that is, to perform detection, synchronization, demodulation and decoding of the navigation message, computation of observables, and, finally, computation of position fixes) the following Global Navigation Satellite System's signals:
 
     In the L1 band:
 
@@ -154,10 +148,7 @@ about:
         - Galileo E5a (centered at 1176.450 MHz)
         - GPS L5 (centered at 1176.450 MHz)
 
-    GNSS-SDR provides interfaces for a wide range of radio frequency front-ends
-    and raw sample file formats, generates processing outputs in standard
-    formats, allows for the full inspection of the whole signal processing
-    chain, and offers a framework for the development of new features.
+    GNSS-SDR provides interfaces for a wide range of radio frequency front-ends and raw sample file formats, generates processing outputs in standard formats, allows for the full inspection of the whole signal processing chain, and offers a framework for the development of new features.
   doc_url: https://gnss-sdr.org/docs/
   dev_url: https://github.com/gnss-sdr/gnss-sdr
 
