@@ -81,13 +81,12 @@ outputs:
       host:
         - armadillo
         - libboost-devel
-        - gflags
-        - glog
         - gnuradio-core
         - gnuradio-iio
         - gnuradio-osmosdr
         - gnuradio-uhd
         - gnuradio-zeromq
+        - libabseil
         - libad9361-iio
         - libblas
         - libiio
