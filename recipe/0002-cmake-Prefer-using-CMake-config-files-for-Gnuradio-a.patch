@@ -11,7 +11,7 @@ Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
  2 files changed, 19 insertions(+), 49 deletions(-)
 
 diff --git a/cmake/Modules/FindGNURADIO.cmake b/cmake/Modules/FindGNURADIO.cmake
-index 01553d725..faa08e296 100644
+index 7dd5194e1..fc924fb16 100644
 --- a/cmake/Modules/FindGNURADIO.cmake
 +++ b/cmake/Modules/FindGNURADIO.cmake
 @@ -27,6 +27,18 @@ if(NOT GR_REQUIRED_COMPONENTS)

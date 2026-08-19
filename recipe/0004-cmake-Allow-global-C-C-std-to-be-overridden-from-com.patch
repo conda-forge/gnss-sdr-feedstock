@@ -15,10 +15,10 @@ Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
  1 file changed, 9 insertions(+), 3 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 8c1eb5f6e..c1709e097 100644
+index e0664f974..876bf03d8 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -503,9 +503,15 @@ endif()
+@@ -519,9 +519,15 @@ endif()
  # Set minimal C and C++ standards
  ################################################################################
  if(NOT (CMAKE_VERSION VERSION_LESS "3.1"))

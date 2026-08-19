@@ -12,7 +12,7 @@ Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
  4 files changed, 7 insertions(+), 4 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 839744f3a..8c1eb5f6e 100644
+index 379e3910d..e0664f974 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -226,6 +226,9 @@ if(NOT CMAKE_PREFIX_PATH)
@@ -26,10 +26,10 @@ index 839744f3a..8c1eb5f6e 100644
  if(${CMAKE_SYSTEM_NAME} MATCHES "Linux|kFreeBSD|GNU")
      include(DetectLinuxDistro)
 diff --git a/src/algorithms/libs/CMakeLists.txt b/src/algorithms/libs/CMakeLists.txt
-index 3f0b050a6..3e87e28bf 100644
+index dc564821a..810ee5d64 100644
 --- a/src/algorithms/libs/CMakeLists.txt
 +++ b/src/algorithms/libs/CMakeLists.txt
-@@ -165,7 +165,7 @@ target_include_directories(algorithms_libs
+@@ -188,7 +188,7 @@ target_include_directories(algorithms_libs
  )
  
  target_compile_definitions(algorithms_libs
@@ -38,7 +38,7 @@ index 3f0b050a6..3e87e28bf 100644
  )
  
  if(DO_NOT_USE_LAMBDAS)
-@@ -224,7 +224,7 @@ else()
+@@ -252,7 +252,7 @@ else()
  endif()
  
  target_compile_definitions(gnss_sdr_flags
@@ -48,10 +48,10 @@ index 3f0b050a6..3e87e28bf 100644
  
  if(ENABLE_CLANG_TIDY)
 diff --git a/src/algorithms/signal_source/adapters/CMakeLists.txt b/src/algorithms/signal_source/adapters/CMakeLists.txt
-index 48e18e5f3..1cf7887a9 100644
+index f214af9a6..eb533a43a 100644
 --- a/src/algorithms/signal_source/adapters/CMakeLists.txt
 +++ b/src/algorithms/signal_source/adapters/CMakeLists.txt
-@@ -332,7 +332,7 @@ if(ENABLE_CLANG_TIDY)
+@@ -334,7 +334,7 @@ if(ENABLE_CLANG_TIDY)
  endif()
  
  target_compile_definitions(signal_source_adapters
