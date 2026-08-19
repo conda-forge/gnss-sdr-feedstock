@@ -1,0 +1,27 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Ryan Volz <ryan.volz@gmail.com>
+Date: Wed, 19 Aug 2026 10:40:01 -0400
+Subject: [PATCH] cmake: Remove check for boost::system component for
+ boost>=1.89 compat
+
+Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 876bf03d8..11934ff68 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -819,7 +819,7 @@ set(Boost_ADDITIONAL_VERSIONS
+     "1.70.0" "1.70" "1.71.0" "1.71"
+ )
+ set(Boost_USE_MULTITHREAD ON)
+-set(BOOST_COMPONENTS atomic chrono date_time serialization system thread)
++set(BOOST_COMPONENTS atomic chrono date_time serialization thread)
+ if(NOT ${FILESYSTEM_FOUND})
+     set(BOOST_COMPONENTS ${BOOST_COMPONENTS} filesystem)
+ endif()
+-- 
+2.51.0
+
