@@ -1,4 +1,4 @@
-{% set version = "0.0.21" %}
+{% set version = "0.0.22" %}
 
 package:
   name: gnss-sdr-split
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/gnss-sdr/gnss-sdr/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 3b3265f5636d3ac27f030146e7028aa07e7d3b7bedb543ea707fb549f0c0da7a
+  sha256: 322dd4eb0d2de914478b2d7df53ef6b40b31765e20050ad7e81c0f3eff5efe12
   patches:
     - 0001-cmake-Manually-specify-compiled-in-GNSSSDR_INSTALL_D.patch
     - 0002-cmake-Prefer-using-CMake-config-files-for-Gnuradio-a.patch
@@ -15,7 +15,7 @@ source:
     - 0005-cmake-Remove-check-for-boost-system-component-for-bo.patch
 
 build:
-  number: 5
+  number: 0
   skip: true  # [win]
 
 outputs:
