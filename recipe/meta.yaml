@@ -15,7 +15,7 @@ source:
     - 0005-cmake-Remove-check-for-boost-system-component-for-bo.patch
 
 build:
-  number: 5
+  number: 6
   skip: true  # [win]
 
 outputs:
